@@ -1,3 +1,19 @@
-#footer{
-    border: 5px solid black;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+footer {
+  margin-top: auto;           
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
