@@ -10,6 +10,10 @@ body {
   padding: 10px;
 }
 
+#button :hover{
+    color: rgb(39, 0, 78);
+} 
+
 footer {
   margin-top: auto;           
   background: #222;
