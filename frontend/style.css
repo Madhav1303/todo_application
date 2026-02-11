@@ -21,3 +21,19 @@ footer {
   text-align: center;
   padding: 15px;
 }
+#Signupform{
+text-align: center;
+background-color: black;
+color: white;
+width:300px;
+height: 250px;
+margin: 20px auto;
+}
+#loginform{
+text-align: center;
+background-color: blue;
+color: white;
+width:300px;
+height: 250px;
+margin: 20px auto;
+}
