@@ -38,6 +38,19 @@ height: 250px;
 margin: 20px auto;
 }
 
-#links{
+#header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#links {
   margin-left: auto;
 }
