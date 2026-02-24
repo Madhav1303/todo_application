@@ -36,6 +36,7 @@ function validate_password()
    {
     alert('The number of characters must be minimum 8');
     flag = false;
+    return false;
    }
    for(let i = 0;i<pass.length;i++)
    {
