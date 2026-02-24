@@ -8,6 +8,11 @@ function messageSignup()
 }
 function validate_input()
 {
+    const username = document.getElementById("username").value;
+    if (username === "") {
+    alert("Username is required");
+    return;
+    }
     if(validate_email() && validate_password())
         alert("Signup Successfull");
     else
@@ -15,7 +20,7 @@ function validate_input()
 }
 function validate_email()
 {
-   const mail = document.getElementById("userEmail");
+   const mail = document.getElementById("userEmail").value;
    console.log(mail);
    if(mail.includes('@') && mail.includes('.com')){
     return true;
@@ -27,10 +32,9 @@ function validate_email()
 }
 function validate_password()
 {
-   const pass = document.getElementById("pass").textContent;
+   const pass = document.getElementById("pass").value;
    let number_capital_letters = 0 ,number_small_letters = 0 , number_digits = 0;
    let number_special_characters = 0;
-   let flag = false;
    for(let i = 0;i<pass.length;i++)
    {
     if(pass[i]>='a' && pass[i]<='z')
@@ -42,9 +46,10 @@ function validate_password()
     else
         number_special_characters++;
    }
-   if(flag){
-    return true;
-   }
+   if(number_capital_letters >=1 && number_small_letters >=1 && number_digits >=1 && number_special_characters >=1)
+    {
+      return true;
+    }
    else{
     if(number_capital_letters <1)
        alert('Minimum number of capital letters must be 1');
