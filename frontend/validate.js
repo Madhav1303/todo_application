@@ -2,10 +2,6 @@ function messageLogin()
 {
     alert("Login successful");
 }
-function messageSignup()
-{
-    alert("Signup successful");
-}
 function validate_input()
 {
     const username = document.getElementById("username").value;
@@ -35,6 +31,12 @@ function validate_password()
    const pass = document.getElementById("pass").value;
    let number_capital_letters = 0 ,number_small_letters = 0 , number_digits = 0;
    let number_special_characters = 0;
+   let flag = true;
+   if(pass.length <8)
+   {
+    alert('The number of characters must be minimum 8');
+    flag = false;
+   }
    for(let i = 0;i<pass.length;i++)
    {
     if(pass[i]>='a' && pass[i]<='z')
@@ -48,7 +50,7 @@ function validate_password()
    }
    if(number_capital_letters >=1 && number_small_letters >=1 && number_digits >=1 && number_special_characters >=1)
     {
-      return true;
+      flag = true;
     }
    else{
     if(number_capital_letters <1)
@@ -59,6 +61,10 @@ function validate_password()
        alert('Minimum number of digits must be 1');
     if(number_special_characters <1)
        alert('Minimum number of special characters must be 1');
-    return false;
+    flag = false;
    }
+   if(flag)
+    return true;
+   else
+    return false;
 }
