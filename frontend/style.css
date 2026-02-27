@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding: 10px;
+  background-color: #f2f7ff;
 }
 
 footer {
