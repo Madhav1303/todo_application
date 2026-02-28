@@ -11,6 +11,23 @@ body {
   background-color: #f2f7ff;
 }
 
+.btn_login{
+  border: 1px solid black;
+  padding: 4px;
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+}
+
+.btn_signup{
+  border: 1px solid black;
+  padding: 4px;
+  color: white;
+  background-color: blue;
+  border-radius: 6px;
+}
+
+
 footer {
   margin-top: auto;           
   background: #222;
